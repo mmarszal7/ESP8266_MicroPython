@@ -7,13 +7,14 @@ https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html
 http://micropython.org/webrepl/?
 
 ---
+# [WEB REPL]
 
-## Firmware update
+1. Check NodeMCU port
+2. Use WEB REPL - just go to http://micropython.org/webrepl/ and connect to 192.168.0.14:8266
+3. Prototyping: paste script code into REPL or rename script to 'main.py' and send it to the device
+4. To run script from file run _import script.py_
 
-1. Download NodeMCU [Flasher]
-2. Download new Firmware (e.g. [MicroPython])
-3. Flash firmware with NodeMCU Flasher (first read [Flasher] instruction)
-
+--- 
 ## First time(!) configuration - running WEB REPL
 
 1.  Download serial port tool (e.g. [TeraTerm] or Ptty) - speed 115200
@@ -48,12 +49,12 @@ http://micropython.org/webrepl/?
                 pass
         print('network config:', sta_if.ifconfig())
         ```
+        
+## Firmware update
 
-# [WEB REPL]
-
-1. Check NodeMCU port
-2. Use WEB REPL - just go to http://micropython.org/webrepl/ and connect to 192.168.0.14:8266
-3. Prototyping: paste script code into REPL or rename script to 'main.py' and send it to the device
+1. Download NodeMCU [Flasher]
+2. Download new Firmware (e.g. [MicroPython])
+3. Flash firmware with NodeMCU Flasher (first read [Flasher] instruction)
 
 [flasher]: https://github.com/nodemcu/nodemcu-flasher#nodemcu-flasher
 [micropython]: https://docs.micropython.org/en/latest/esp8266/esp8266/tutorial/intro.html
