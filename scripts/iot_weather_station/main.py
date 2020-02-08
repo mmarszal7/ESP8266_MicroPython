@@ -3,9 +3,9 @@ import dht
 import urequests
 import time
 
-# DHT is on pin 2 (D4)
-d = dht.DHT11(machine.Pin(4))
-host = 'http://192.168.0.39/grafana/index.php?'
+# DHT is on pin 14 (D5 - check pinout)
+d = dht.DHT11(machine.Pin(14))
+host = 'http://192.168.0.39:80/grafana/index.php?'
 
 while True:
     d.measure()
